@@ -6,3 +6,7 @@ img{
     width: 100px;
     }
 
+@media (max-width: 670px) {
+      .comic {
+        width: 100%;
+      }
