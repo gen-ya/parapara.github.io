@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>クリックしてパラパラ漫画</title>
+ <link rel="stylesheet" href="stylesheet.css">
+ <script type="text/javascript">
+    function LinkClick(param) {
+      var elem = document.getElementById("image01");
+
+      switch (param) {
+        case 0:
+          elem.src = "1.png";
+          break;
+        case 1:
+          elem.src = "2.png";
+          break;
+        case 2:
+          elem.src = "3.png";
+          break;
+        case 3:
+          elem.src = "4.png";
+          break;
+        case 4:
+          elem.src = "5.png";
+          break;
+          case 5:
+            elem.src = "6.png";
+            break;
+          case 6:
+            elem.src = "7.png";
+            break;
+          case 7:
+            elem.src = "8.png";
+            break;
+        default:
+          elem.src = "1.png";
+          break;
+      }
+    }
+  </script>
+</head>
+<body>
+  <p>Image</p>
+    <img id="image01" src="1.png" />
+    <hr/>
+    <a href="javascript:void(0);" onclick="LinkClick(0);">１コマ目</a><br/>
+    <a href="javascript:void(0);" onclick="LinkClick(1);">２コマ目</a><br />
+    <a href="javascript:void(0);" onclick="LinkClick(2);">３コマ目</a><br />
+    <a href="javascript:void(0);" onclick="LinkClick(3);">４コマ目</a><br />
+    <a href="javascript:void(0);" onclick="LinkClick(4);">５コマ目</a><br />
+    <a href="javascript:void(0);" onclick="LinkClick(5);">６コマ目</a><br />
+    <a href="javascript:void(0);" onclick="LinkClick(6);">７コマ目</a><br />
+    <a href="javascript:void(0);" onclick="LinkClick(7);">８コマ目</a><br />
+</body>
+</html>
